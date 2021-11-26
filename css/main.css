@@ -24,7 +24,7 @@ nav {
 
 /* Estilos del header con Bootstrap (BS) y animaciones (index.html) */
 .header {
-  background: url(/media/index-hero.jpg) no-repeat;
+  background: url(../media/index-hero.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
