@@ -1,0 +1,36 @@
+/*Estilos del footer*/
+
+footer {
+  font-family: $global-site-font-family;
+  padding: $global-padding;
+  background-color: $global-site-bg-color;
+}
+
+.footer__buttons {
+
+    margin-top: 5px;
+}
+
+.footer__images {
+
+  width: 2rem;
+  height: auto;
+}
+  
+.footer__social {
+      li {
+        display: inline-block;
+        padding: $global-padding;
+        margin: 5px 5px 5px 10px;
+        }
+}
+  
+/* ex #suscription */
+.footer__subscription {
+    margin-left: $global-left-margin;
+}
+
+/* ex #redes */
+.footer__redes {
+    margin-left: $global-left-margin;
+  }

@@ -1,0 +1,54 @@
+.prices {
+    display: grid;
+    padding: $global-padding;
+    margin: 1rem;
+  }
+  
+  #plan-basico {
+    grid-area: plan-basico;
+  }
+  
+  #plan-pro {
+    grid-area: plan-pro;
+  }
+  
+  #plan-premium {
+    grid-area: plan-premium;
+  }
+  
+  #agregar-basico {
+    grid-area: carrito-basico;
+  }
+  
+  #agregar-pro {
+    grid-area: carrito-pro;
+  }
+  
+  #agregar-premium {
+    grid-area: carrito-premium;
+  }
+
+  .prices__buttons {
+    font-weight: 500;
+    background: $global-button-hover;
+    border: 1px solid #91C9FF;
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+  
+  .prices__priceList {
+    color: rgb(121, 100, 180);
+    @include siteFontSetup($global-site-font-family, $global-text-weight);
+    list-style-image: url("/media/icons/bug-icon.png");
+    padding: 20px 1px 20px 20px;
+    text-align: left;
+  }
+  
+  .prices__pricingPlans {
+    @include siteFontSetup($global-site-font-family, $global-text-weight);
+    font-size: 1.2rem;
+    text-align: center;
+    border: 3px solid black;
+    background-image: url("https://abstract-technology.com/home/slides/slide_2.png/@@images/222ecca5-7326-43e5-9415-be4146aad1cd.png");
+    background-size: cover;
+  }

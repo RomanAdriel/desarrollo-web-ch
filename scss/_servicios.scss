@@ -1,0 +1,23 @@
+/*Estilos del flex de la página de Servicios*/
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-left: 15px;
+    padding: 25px;
+  
+  }
+  
+  .services__images {
+    flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border-radius: 75px;
+    margin-top: 10px;
+    width: 48rem;
+    padding: 25px 0 25px 0;
+  
+  }

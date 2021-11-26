@@ -1,0 +1,30 @@
+/*Estilos del form de contacto*/
+
+fieldset {
+    padding: 10px 10px 10px 10px;
+    width: 33%;
+}
+  
+form {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+textarea {
+    margin-top: 10px;
+
+    :focus::placeholder {
+        color: transparent;
+    }
+}
+
+/* ex formFields formBlocks */
+.contacto {
+    margin-left: 15px;
+}
+  
+.contacto__blocks {
+    margin-bottom: 5px;
+}

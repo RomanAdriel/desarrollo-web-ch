@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A QA Man - Precios</title>
+    <meta name="description" content="Check out the different plans we offer according to your needs" />
+    <meta name="keywords" content="QA, Quality Assurance, Services, IT, Software Development"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="header">
+      <div name="logo">
+        <a href="../index.html">
+        <img src="../media/logo.png" alt="logo" class="header__logo"/>
+        </a>
+      </div>
+      <nav class="header">
+        <ul class="nav header__menu">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a  class="nav-link" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a  class="nav-link" href="precios.html">Precios</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#quienes-somos">Quiénes Somos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Contiene los bloques con la lista de precios en grid-->
+    <main>
+        <h1>Elegí el plan que mejor se ajuste a tus necesidades</h1>
+        <div id="lista-de-precios" class="prices">
+          <article id="plan-basico" class="prices__pricingPlans">
+              <h3>Plan Básico</h3>
+              <div id="lista-plan-basico" class="prices__priceList">
+                <ul>
+                  <li>Pruebas funcionales manuales web</li>
+                  <li>Suite de casos de prueba</li>
+                  <li>Pruebas explotarias</li>
+                </ul>
+              </div>
+          </article>
+          <button class="btn btn-dark prices__buttons" id="agregar-basico">Agregar al carrito</button>
+          <article id="plan-pro" class="prices__pricingPlans">
+            <h3>Plan Pro</h3>
+            <div id="lista-plan-pro" class="prices__priceList">
+              <ul>
+                <li>Pruebas funcionales manuales web</li>
+                <li>Suite de casos de prueba</li>
+                <li>Pruebas explotarias</li>
+                <li>
+                  Pruebas automatizadas web cross-browser, cross-platform y
+                  cross-device
+                </li>
+              </ul>
+            </div>
+          </article>
+          <button class="btn btn-dark prices__buttons" id="agregar-pro">Agregar al carrito</button>
+          <article id="plan-premium" class="prices__pricingPlans">
+            <h3>Plan Premium</h3>
+            <div id="lista-plan-premium" class="prices__priceList">
+              <ul>
+                <li>Pruebas funcionales manuales web</li>
+                <li>Suite de casos de prueba</li>
+                <li>Pruebas explotarias</li>
+                <li>
+                  Pruebas automatizadas web cross-browser, cross-platform y
+                  cross-device
+                </li>
+                <li>Pruebas automatizadas no funcionales</li>
+              </ul>
+            </div>
+        </article>
+        <button class="btn btn-dark prices__buttons" id="agregar-premium">Agregar al carrito</button>
+      </div>
+      </main>
+
+    <footer>
+      <div>
+        <div>
+          <h2>&copy2021-2022 Todos los derechos reservados</h2>
+        </div>
+
+        <div>
+          <label class="contacto">Suscribite a nuestro newsletter</label>
+          <form action="" class="footer__subscription">
+            <input type="text" placeholder="Ingresa tu email" />
+            <input type="submit" class="btn btn-dark" value="Suscribirse" />
+          </form>
+        </div>
+        <div>
+          <label class="footer__redes">Nuestras redes</label>
+          <ul class="footer__social">
+            <li>
+              <a href="https://api.whatsapp.com/send?phone=+5491135984842" target="_blank">
+              <img class="footer__images" src="../media/icons/whatsapp.png" alt="Whatsapp"/>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/romazepam/" target="_blank">
+              <img class="footer__images" src="../media/icons/instagram.png" alt="Instagram"/>
+              </a>
+            </li>
+            <li>
+              <a href="https://es-la.facebook.com/aqamantesting" target="_blank">
+              <img class="footer__images" src="../media/icons/facebook.png" alt="Facebook"/>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/romanadriel/" target="_blank"> 
+              <img class="footer__images" src="../media/icons/linkedin.png" alt="LinkedIn"/>
+              </a>
+            </li>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  </body>
+</html>

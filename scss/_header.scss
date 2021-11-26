@@ -1,0 +1,79 @@
+/* Estilos del header con Bootstrap (BS) y animaciones (index.html) */
+
+.header {
+    background: url(/media/index-hero.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .header__logo {
+    text-align: center;
+  }
+
+  .header__navbar {
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    font-family: $global-site-font-family;
+    padding: $global-padding;
+    background-color: $global-site-bg-color;
+  }
+
+  .header__menu {
+
+    background-color: #343a40;
+    
+      li {
+          display: inline-block;
+        }
+      a {
+          @include siteFontSetup($global-site-font-family, $global-text-weight);
+          text-decoration: none;
+  
+          &:hover {
+              background-color: $global-bg-hover;
+              text-shadow: 2px;
+              color: $global-nav-hover;
+          }
+          &:visited {
+
+            color: white;
+          }
+      }
+}
+
+  /*Animaciones del index*/
+  
+  @keyframes navbarLoad {
+  
+    0% {
+      transform: translateY(-60%);}
+    100% {
+      transform: translateY(0);}
+    
+  }
+  
+  .header__navbarAnimation {
+  
+    animation-name: navbarLoad;
+    animation-duration: 1s;
+  }
+  
+  @keyframes indexTitle {
+  
+    0% {
+      transform: rotateX(90deg);
+      transform: scale(2,2);
+    }
+    100% {
+      transform: rotateX(0deg);
+      transform: scale(1,1);
+    }
+  }
+  
+  .header__headerAnimation {
+  
+    animation-name: indexTitle;
+    animation-duration: 1s;
+}

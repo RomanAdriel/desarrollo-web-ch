@@ -1,0 +1,74 @@
+/* Estilos generales */
+
+a:visited {
+    color: rgb(128, 109, 49);
+}
+
+/*Estilos generales de botones e inputs*/
+button {
+    @include textFontSetup($global-text-font-family, $global-text-weight);
+    margin: auto;
+    margin-top: 25px;
+    padding: $global-padding;
+    border-radius: 3px;
+    background-color: $global-site-bg-color;
+    display: flex;
+    text-align: center;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $global-bg-hover;
+            color: $global-button-hover;
+
+        }
+}
+
+input {
+    padding: $global-padding;
+    margin-right: 10px;
+    border-radius: 3px;
+
+    :focus::placeholder {
+        color: transparent;
+    }
+  }
+
+
+/*Estilos generales de los textos*/
+h1 {
+    @include textFontSetup($global-text-font-family, $global-text-weight);
+    color: rgb(0, 153, 255);
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: $global-padding;
+
+  
+}
+
+h2 {
+    @include textFontSetup($global-text-font-family, $global-text-weight);
+    color: rgb(128, 109, 49);
+    font-size: 1.7rem;
+    border-bottom: 2px solid black;
+    padding-bottom: 12px;
+    padding: $global-padding;
+    margin: 20px 5px 10px 10px;
+}
+  
+h3 {
+    @include textFontSetup($global-text-font-family, $global-text-weight);
+    color: rgb(128, 109, 49);
+    font-size: 1.5rem;
+    padding: $global-padding;
+    border-bottom: 3px solid black;
+}
+  
+p {
+    @include textFontSetup($global-text-font-family, $global-text-weight);
+    color: rgb(49, 43, 43);
+    word-spacing: 2px;
+    font-size: 1.3rem;
+    padding: $global-padding;
+    margin: 10px 5px 10px 15px;
+}

@@ -1,0 +1,17 @@
+/* Estilos de la navar específicos de las páginas aún sin Bootstrap (BS) */
+
+.navbar {
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+}
+
+.navbar__customMenu {
+    display: inline-flex;
+  }
+
+nav {
+  @include siteFontSetup($global-site-font-family, $global-text-weight);
+  padding: $global-padding;
+  background-color: $global-site-bg-color;
+}

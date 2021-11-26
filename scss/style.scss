@@ -1,0 +1,181 @@
+/* Global Paddings y Margins */
+$global-padding: 5px;
+$global-left-margin: 15px;
+
+/* Global Fonts Styles*/
+$global-text-weight: 600;
+$global-site-font-family: "Ubuntu";
+$global-text-font-family: "Poppins";
+
+/* Global Backgrounds */
+$global-site-bg-color: aliceblue;
+
+/* General */
+$global-nav-hover: rgb(0, 153, 255);
+$global-button-hover: rgb(136, 144, 150);
+$global-bg-hover: rgb(144, 214, 162);
+
+@mixin siteFontSetup($global-site-font-family, $global-text-weight) {
+  font-weight: $global-text-weight;
+  font-family: $global-site-font-family;
+
+}
+
+@mixin textFontSetup($global-text-font-family, $global-text-weight) {
+  font-weight: $global-text-weight;
+  font-family: $global-text-font-family;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+@import "navbar";
+@import "header";
+@import "footer";
+@import "common";
+@import "main";
+@import "precios";
+@import "servicios";
+@import "contacto";
+
+/* Media Queries */
+
+/* Media query para viewports mobile */ 
+@media only screen and (max-width: 767px) {
+
+  h3 {
+    padding: 2px;
+  }
+
+  textarea {
+    height: 10em;
+    width: 23em;
+  }
+
+  .header__logo {
+    width: 100%;
+    height: auto;
+  }
+
+  .header__menu {
+      display: inline-grid;
+      li {
+        padding-right: 1px;
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+        margin-right: 4rem;
+        padding-right: 3px;
+        padding-bottom: 1px;
+    }
+  }
+
+  .prices {
+      grid-template-areas: 
+      "plan-basico"
+      "carrito-basico"
+      "plan-pro"
+      "carrito-pro" 
+      "plan-premium"
+      "carrito-premium";
+      grid-template-rows: repeat(6, 1fr);
+      grid-gap: 10px;
+  }
+
+  .services__images {
+    width: 20rem;
+  }
+
+  /*Estilos del carousel*/
+  
+  #servicesCarousel {
+      height: 180px;
+      width: auto;
+      overflow: hidden;
+    } 
+}
+
+/* Media query para viewports tablets */ 
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+  h3 {
+    padding: $global-padding;
+  }
+
+  textarea {
+    height: 10em;
+    width: 50em;
+  }
+
+  .header__menu {
+    display: inline-grid;
+      li {
+        padding-right: 25px;
+        margin-left: 2rem;
+      }
+   }
+
+  .prices {
+    grid-template-areas: 
+    "plan-basico plan-pro plan-premium"
+    "carrito-basico carrito-pro carrito-premium";
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  .services__images {
+    width: 48rem;
+  }
+
+  /*Estilos del carousel*/
+
+   #servicesCarousel {
+    height: 300px;
+    width: auto;
+    overflow: hidden;
+    
+  }
+}
+
+/* Media query para viewports desktop */ 
+@media only screen and (min-width: 1024px) {
+
+  h3 {
+    padding: $global-padding;
+  }
+
+  textarea {
+    height: 10em;
+    width: 50em;
+  }
+
+  .header__menu {
+    li {
+      margin-left: 12%;
+      padding: $global-padding;
+    }
+  }
+  
+  .prices {
+    grid-template-areas: 
+    "plan-basico plan-pro plan-premium"
+    "carrito-basico carrito-pro carrito-premium";
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  .services__images {
+    width: 48rem;
+  }
+
+  /*Estilos del carousel*/
+
+  #servicesCarousel {
+    height: 600px;
+    width: auto;
+    overflow: hidden;
+  
+  }
+}

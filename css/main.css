@@ -1,0 +1,346 @@
+@charset "UTF-8";
+/* Global Paddings y Margins */
+/* Global Fonts Styles*/
+/* Global Backgrounds */
+/* General */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* Estilos de la navar específicos de las páginas aún sin Bootstrap (BS) */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.navbar__customMenu {
+  display: inline-flex; }
+
+nav {
+  font-weight: 600;
+  font-family: "Ubuntu";
+  padding: 5px;
+  background-color: aliceblue; }
+
+/* Estilos del header con Bootstrap (BS) y animaciones (index.html) */
+.header {
+  background: url(/media/index-hero.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+.header__logo {
+  text-align: center; }
+
+.header__navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Ubuntu";
+  padding: 5px;
+  background-color: aliceblue; }
+
+.header__menu {
+  background-color: #343a40; }
+  .header__menu li {
+    display: inline-block; }
+  .header__menu a {
+    font-weight: 600;
+    font-family: "Ubuntu";
+    text-decoration: none; }
+    .header__menu a:hover {
+      background-color: #90d6a2;
+      text-shadow: 2px;
+      color: #0099ff; }
+    .header__menu a:visited {
+      color: white; }
+
+/*Animaciones del index*/
+@keyframes navbarLoad {
+  0% {
+    transform: translateY(-60%); }
+  100% {
+    transform: translateY(0); } }
+
+.header__navbarAnimation {
+  animation-name: navbarLoad;
+  animation-duration: 1s; }
+
+@keyframes indexTitle {
+  0% {
+    transform: rotateX(90deg);
+    transform: scale(2, 2); }
+  100% {
+    transform: rotateX(0deg);
+    transform: scale(1, 1); } }
+
+.header__headerAnimation {
+  animation-name: indexTitle;
+  animation-duration: 1s; }
+
+/*Estilos del footer*/
+footer {
+  font-family: "Ubuntu";
+  padding: 5px;
+  background-color: aliceblue; }
+
+.footer__buttons {
+  margin-top: 5px; }
+
+.footer__images {
+  width: 2rem;
+  height: auto; }
+
+.footer__social li {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px 5px 5px 10px; }
+
+/* ex #suscription */
+.footer__subscription {
+  margin-left: 15px; }
+
+/* ex #redes */
+.footer__redes {
+  margin-left: 15px; }
+
+/* Estilos generales */
+a:visited {
+  color: #806d31; }
+
+/*Estilos generales de botones e inputs*/
+button {
+  font-weight: 600;
+  font-family: "Poppins";
+  margin: auto;
+  margin-top: 25px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: aliceblue;
+  display: flex;
+  text-align: center; }
+  button:hover {
+    cursor: pointer;
+    background-color: #90d6a2;
+    color: #889096; }
+
+input {
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 3px; }
+  input :focus::placeholder {
+    color: transparent; }
+
+/*Estilos generales de los textos*/
+h1 {
+  font-weight: 600;
+  font-family: "Poppins";
+  color: #0099ff;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 5px; }
+
+h2 {
+  font-weight: 600;
+  font-family: "Poppins";
+  color: #806d31;
+  font-size: 1.7rem;
+  border-bottom: 2px solid black;
+  padding-bottom: 12px;
+  padding: 5px;
+  margin: 20px 5px 10px 10px; }
+
+h3 {
+  font-weight: 600;
+  font-family: "Poppins";
+  color: #806d31;
+  font-size: 1.5rem;
+  padding: 5px;
+  border-bottom: 3px solid black; }
+
+p {
+  font-weight: 600;
+  font-family: "Poppins";
+  color: #312b2b;
+  word-spacing: 2px;
+  font-size: 1.3rem;
+  padding: 5px;
+  margin: 10px 5px 10px 15px; }
+
+section, main {
+  background-image: linear-gradient(to right, #90d6a2, blanchedalmond);
+  padding: 25px; }
+
+.main__landingVideos {
+  border-radius: 5%;
+  width: 50%;
+  height: auto;
+  margin-left: 25%; }
+
+.prices {
+  display: grid;
+  padding: 5px;
+  margin: 1rem; }
+
+#plan-basico {
+  grid-area: plan-basico; }
+
+#plan-pro {
+  grid-area: plan-pro; }
+
+#plan-premium {
+  grid-area: plan-premium; }
+
+#agregar-basico {
+  grid-area: carrito-basico; }
+
+#agregar-pro {
+  grid-area: carrito-pro; }
+
+#agregar-premium {
+  grid-area: carrito-premium; }
+
+.prices__buttons {
+  font-weight: 500;
+  background: #889096;
+  border: 1px solid #91C9FF;
+  outline: none;
+  transition: 1s ease-in-out; }
+
+.prices__priceList {
+  color: #7964b4;
+  font-weight: 600;
+  font-family: "Ubuntu";
+  list-style-image: url("/media/icons/bug-icon.png");
+  padding: 20px 1px 20px 20px;
+  text-align: left; }
+
+.prices__pricingPlans {
+  font-weight: 600;
+  font-family: "Ubuntu";
+  font-size: 1.2rem;
+  text-align: center;
+  border: 3px solid black;
+  background-image: url("https://abstract-technology.com/home/slides/slide_2.png/@@images/222ecca5-7326-43e5-9415-be4146aad1cd.png");
+  background-size: cover; }
+
+/*Estilos del flex de la página de Servicios*/
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-left: 15px;
+  padding: 25px; }
+
+.services__images {
+  flex-basis: 100px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  border-radius: 75px;
+  margin-top: 10px;
+  width: 48rem;
+  padding: 25px 0 25px 0; }
+
+/*Estilos del form de contacto*/
+fieldset {
+  padding: 10px 10px 10px 10px;
+  width: 33%; }
+
+form {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  margin-left: 15px;
+  padding: 10px; }
+
+textarea {
+  margin-top: 10px; }
+  textarea :focus::placeholder {
+    color: transparent; }
+
+/* ex formFields formBlocks */
+.contacto {
+  margin-left: 15px; }
+
+.contacto__blocks {
+  margin-bottom: 5px; }
+
+/* Media Queries */
+/* Media query para viewports mobile */
+@media only screen and (max-width: 767px) {
+  h3 {
+    padding: 2px; }
+  textarea {
+    height: 10em;
+    width: 23em; }
+  .header__logo {
+    width: 100%;
+    height: auto; }
+  .header__menu {
+    display: inline-grid; }
+    .header__menu li {
+      padding-right: 1px;
+      margin-left: 1rem;
+      margin-top: 0.5rem;
+      margin-right: 4rem;
+      padding-right: 3px;
+      padding-bottom: 1px; }
+  .prices {
+    grid-template-areas: "plan-basico" "carrito-basico" "plan-pro" "carrito-pro"  "plan-premium" "carrito-premium";
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 10px; }
+  .services__images {
+    width: 20rem; }
+  /*Estilos del carousel*/
+  #servicesCarousel {
+    height: 180px;
+    width: auto;
+    overflow: hidden; } }
+
+/* Media query para viewports tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  h3 {
+    padding: 5px; }
+  textarea {
+    height: 10em;
+    width: 50em; }
+  .header__menu {
+    display: inline-grid; }
+    .header__menu li {
+      padding-right: 25px;
+      margin-left: 2rem; }
+  .prices {
+    grid-template-areas: "plan-basico plan-pro plan-premium" "carrito-basico carrito-pro carrito-premium";
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; }
+  .services__images {
+    width: 48rem; }
+  /*Estilos del carousel*/
+  #servicesCarousel {
+    height: 300px;
+    width: auto;
+    overflow: hidden; } }
+
+/* Media query para viewports desktop */
+@media only screen and (min-width: 1024px) {
+  h3 {
+    padding: 5px; }
+  textarea {
+    height: 10em;
+    width: 50em; }
+  .header__menu li {
+    margin-left: 12%;
+    padding: 5px; }
+  .prices {
+    grid-template-areas: "plan-basico plan-pro plan-premium" "carrito-basico carrito-pro carrito-premium";
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; }
+  .services__images {
+    width: 48rem; }
+  /*Estilos del carousel*/
+  #servicesCarousel {
+    height: 600px;
+    width: auto;
+    overflow: hidden; } }

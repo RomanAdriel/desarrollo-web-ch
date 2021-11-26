@@ -1,0 +1,13 @@
+//* Estilos de main y section tags//
+
+section, main {
+    background-image: linear-gradient(to right, rgb(144, 214, 162), blanchedalmond);
+    padding: 25px;
+}
+
+.main__landingVideos {
+    border-radius: 5%;
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+}
