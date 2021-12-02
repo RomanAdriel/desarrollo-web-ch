@@ -9,6 +9,10 @@ $global-text-font-family: "Poppins";
 
 /* Global Backgrounds */
 $global-site-bg-color: aliceblue;
+$main-background-transition: linear-gradient(to left, rgb(122, 122, 122), rgb(245, 245, 245));
+$section-background: url("../media/section-background.svg");
+$section-repeat: no-repeat;
+$section-position: 0 100%;
 
 /* General */
 $global-nav-hover: rgb(0, 153, 255);
@@ -35,6 +39,12 @@ $global-bg-hover: rgb(144, 214, 162);
   font-weight: $global-text-weight;
   font-family: $global-text-font-family;
 
+}
+
+@mixin sectionBackground($section-background, $section-repeat, $section-position) {
+  background-image: $section-background;
+  background-repeat: $section-repeat;
+  background-position: $section-position
 }
 
 @import "navbar";

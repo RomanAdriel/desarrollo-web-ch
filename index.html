@@ -58,7 +58,7 @@
 
     <main>
     <!--Sección de Servicios, luego se verá con el primer scroll de la página-->
-      <section id="servicios">
+      <section id="servicios" class="main__sectionTransition">
         <div class="container">
           <div class="row">
             <h2>Lo que buscás lo encontrás</h2>
@@ -100,7 +100,7 @@
     </section>
 
     <!--Sección de Precios-->
-    <section id="precios">
+    <section id="precios" class="main__sectionBackground">
       <div class="container">
         <div class="row">
           <h2>Precios a tu alcance</h2>
@@ -120,7 +120,7 @@
     </section>
 
     <!--Sección de Contacto-->
-    <section id="contacto">
+    <section id="contacto" class="main__sectionTransition">
       <div class="container">
         <div class="row">
           <h2>Todavía no estás seguro?</h2>
@@ -140,7 +140,7 @@
     </section>
 
     <!--Sección de Quiénes Somos. En la navbar, sólo se ve en el index-->
-    <section id="quienes-somos">
+    <section id="quienes-somos" class="main__sectionBackground">
       <div class="container">
         <div class="row">
           <h2>¿Quiénes Somos?</h2>
@@ -153,20 +153,15 @@
   </main>
 
     <footer>
-      <div>
+      <div class="container">
+        <h2>&copy2021-2022 Todos los derechos reservados</h2>
         <div>
-          <h2>&copy2021-2022 Todos los derechos reservados</h2>
-        </div>
-
-        <div>
-          <label class="contacto">Suscribite a nuestro newsletter</label>
           <form action="" class="footer__subscription">
             <input type="text" placeholder="Ingresa tu email" />
             <input type="submit" class="btn btn-dark" value="Suscribirse" />
           </form>
         </div>
         <div>
-          <label class="footer__redes">Nuestras redes</label>
           <ul class="footer__social">
               <li>
                 <a href="https://api.whatsapp.com/send?phone=+5491135984842" target="_blank">

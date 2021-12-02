@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 </head>
@@ -21,7 +22,7 @@
       <img src="../media/logo.png" alt="logo" class="header__logo"/>
       </a>
     </div>
-    <nav class="header">
+    <nav>
       <ul class="nav header__menu">
         <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
         <li class="nav-item"><a  class="nav-link" href="servicios.html">Servicios</a></li>
@@ -30,47 +31,61 @@
         <li class="nav-item"><a class="nav-link" href="../index.html#quienes-somos">Quiénes Somos</a></li>
       </ul>
     </nav>
+    <nav id="mobile-nav">
+      <ul class="menu" id="menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="precios.html">Precios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="../index.html#quienes-somos">Quiénes Somos</a></li>
+        <a class="close" href="#">
+        <span class="material-icons">
+          close
+        </span>
+        </a>
+      </ul>
+      <a class="hamburger" href="#menu">
+        <span class="material-icons">
+          menu
+        </span>
+      </a>
+    </nav>
+    <div class="container">
+      <h1 class="header__headerAnimation">De todos para todos</h1>
+      <p>Pruebas web, móviles y de escritorio. Funcionales y no funcionales. Y, por supuesto, cross-platform, cross-browser</p>
+    </div>
   </header>
 
   <!--Contiene los bloques con los tipos de servicios en flex-->
-  <main>
-    <h1>De todos para todos</h1>
-    <p>Pruebas web, móviles y de escritorio. Funcionales y no funcionales. Y, por supuesto, cross-platform, cross-browser</p>
-    <div class="services">
-      <div> 
+  <main class="services main__sectionBackground">
+    <section id="testing-manual" class="services__box">
         <h3>Pruebas Manuales</h3>
         <p>Realizamos pruebas manuales de caja negra, gris y blanca</p>
         <img src="../media/manual-testing.jpg" class="services__images">
-      </div>
-      <div> 
+    </section>
+    <section id="automated-testing" class="services__box">
         <h3>Pruebas No Funcionales</h3>
         <p>Automatizamos pruebas no funcionales (performance y security)</p>
         <img src="../media/non-functional-testing.jpg" class="services__images" >
-      </div>
-      <div> 
+    </section>
+    <section id="cross-testing" class="services__box"> 
         <h3>Pruebas Cross-Navegador</h3>
         <p>Automatizamos pruebas funcionales en diferentes plataformas y navegadores</p>
         <img src="../media/cross-browser-testing.jpg" class="services__images">
-      </div>
-    </div>
+    </section>
   </main>
 
   <footer>
-    <div>
+    <div class="container">
+      <h2>&copy2021-2022 Todos los derechos reservados</h2>
       <div>
-        <h2>&copy2021-2022 Todos los derechos reservados</h2>
-      </div>
-  
-      <div>
-        <label class="contacto">Suscribite a nuestro newsletter</label>
         <form action="" class="footer__subscription">
           <input type="text" placeholder="Ingresa tu email" />
           <input type="submit" class="btn btn-dark" value="Suscribirse" />
         </form>
       </div>
       <div>
-        <label class="footer__redes">Nuestras redes</label>
-          <ul class="footer__social">
+        <ul class="footer__social">
             <li>
               <a href="https://api.whatsapp.com/send?phone=+5491135984842" target="_blank">
               <img class="footer__images" src="../media/icons/whatsapp.png" alt="Whatsapp"/>
@@ -81,7 +96,7 @@
               <img class="footer__images" src="../media/icons/instagram.png" alt="Instagram"/>
               </a>
             </li>
-            <li>
+            <li class=".footer__images--facebook">
               <a href="https://es-la.facebook.com/aqamantesting" target="_blank">
               <img class="footer__images" src="../media/icons/facebook.png" alt="Facebook"/>
               </a>
@@ -91,7 +106,6 @@
               <img class="footer__images" src="../media/icons/linkedin.png" alt="LinkedIn"/>
               </a>
             </li>
-          </ul>
       </div>
     </div>
   </footer>
