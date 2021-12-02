@@ -1,7 +1,6 @@
 //* Estilos de main y section tags//
 
-section, main {
-    background-image: linear-gradient(to right, rgb(144, 214, 162), blanchedalmond);
+section {
     padding: 25px;
 }
 
@@ -10,4 +9,14 @@ section, main {
     width: 50%;
     height: auto;
     margin-left: 25%;
+}
+
+#servicios, #contacto {
+    background-image: linear-gradient(to left, rgb(122, 122, 122), rgb(245, 245, 245));
+}
+
+#precios, #quienes-somos {
+    background-image: url("../media/section-background.svg");
+    background-repeat: no-repeat;
+    background-position: 0 100%;
 }
