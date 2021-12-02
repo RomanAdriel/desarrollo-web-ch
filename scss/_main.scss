@@ -11,12 +11,10 @@ section {
     margin-left: 25%;
 }
 
-#servicios, #contacto {
-    background-image: linear-gradient(to left, rgb(122, 122, 122), rgb(245, 245, 245));
+.main__sectionTransition {
+    background-image: $main-background-transition;
 }
 
-#precios, #quienes-somos {
-    background-image: url("../media/section-background.svg");
-    background-repeat: no-repeat;
-    background-position: 0 100%;
+.main__sectionBackground {
+    @include sectionBackground($section-background, $section-repeat, $section-position);
 }

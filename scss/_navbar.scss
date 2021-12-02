@@ -65,4 +65,6 @@
 nav {
   @include siteFontSetup($global-site-font-family, $global-text-weight);
   background-color: $global-site-bg-color;
+  position: sticky;
+  top: 0;
 }

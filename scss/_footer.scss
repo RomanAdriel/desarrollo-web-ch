@@ -3,7 +3,7 @@
 footer {
   font-family: $global-site-font-family;
   padding: $global-padding;
-  background-color: $global-site-bg-color;
+  background-image: $main-background-transition;
 }
 
 .footer__buttons {
@@ -18,8 +18,11 @@ footer {
 }
   
 .footer__social {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
       li {
-        display: inline-block;
         padding: $global-padding;
         margin: 5px 5px 5px 10px;
         }
@@ -28,6 +31,7 @@ footer {
 /* ex #suscription */
 .footer__subscription {
     margin-left: $global-left-margin;
+    text-align: center;
 }
 
 /* ex #redes */

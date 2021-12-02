@@ -57,6 +57,7 @@ h2 {
     padding-bottom: 12px;
     padding: $global-padding;
     margin: 20px 5px 10px 10px;
+    text-align: center;
 }
   
 h3 {
@@ -74,4 +75,9 @@ p {
     font-size: 1.3rem;
     padding: $global-padding;
     margin: 10px 5px 10px 15px;
+}
+
+.center-p {
+    @extend p;
+    text-align: center;
 }
