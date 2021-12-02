@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"/>
   </head>
@@ -21,7 +22,7 @@
         <img src="media/logo.png" alt="logo" class="header__logo"/>
         </a>
       </div>
-      <nav class="header">
+      <nav>
         <ul class="nav header__menu">
           <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
           <li class="nav-item"><a  class="nav-link" href="pages/servicios.html">Servicios</a></li>
@@ -30,35 +31,50 @@
           <li class="nav-item"><a class="nav-link" href="#quienes-somos">Quiénes Somos</a></li>
         </ul>
       </nav>
-    </header>
-    <!--Navbar con clase para imagen hero, disposición del menú y animaciones presentes sólo en el index-->
 
-
-    <!--Main sólo con header para que eventualmente sea lo único que se ve en una primera carga de la página-->
-    <main>
+      <nav id="mobile-nav">
+        <ul class="menu" id="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pages/servicios.html">Servicios</a></li>
+          <li><a href="pages/precios.html">Precios</a></li>
+          <li><a href="pages/contacto.html">Contacto</a></li>
+          <li><a href="#quienes-somos">Quiénes Somos</a></li>
+          <a class="close" href="#">
+          <span class="material-icons">
+            close
+          </span>
+          </a>
+        </ul>
+        <a class="hamburger" href="#menu">
+          <span class="material-icons">
+            menu
+          </span>
+        </a>
+      </nav>
       <div class="container">
-        <h1 class="header__headerAnimation">No es el superhéroe en el que estás pensando sino el que estás necesitando</h1>
+        <h1 class="header__headerAnimation">No es el superhéroe en el que estás pensando sino el que estás necesitando</h1> 
       </div>
-    </main>
+    </header>
 
+    <main>
     <!--Sección de Servicios, luego se verá con el primer scroll de la página-->
-    <section id="servicios">
-      <div class="container">
-        <div class="row">
-          <h2>Lo que buscás lo encontrás</h2>
-        </div>
-        <div class="row">
-          <p>
+      <section id="servicios">
+        <div class="container">
+          <div class="row">
+            <h2>Lo que buscás lo encontrás</h2>
+          </div>
+          <div class="row">
+            <p>
             Ofrecemos servicios de testing para todo tipo de plataformas, ya sea
             web, móviles o de escritorio y, por supuesto, todo tipo de pruebas,
             funcionales y no funcionales
-          </p>
-        </div>
-        <div id="servicesCarousel" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="media/manual-testing.jpg" alt="manual-testing">
-            </div>
+            </p>
+          </div>
+          <div id="servicesCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="media/manual-testing.jpg" alt="manual-testing">
+              </div>
             <div class="carousel-item">
               <img class="d-block w-100" src="media/non-functional-testing.jpg" alt="non-functional-testing">
             </div>
@@ -82,7 +98,6 @@
         </div>
       </div>
     </section>
-
 
     <!--Sección de Precios-->
     <section id="precios">
@@ -135,6 +150,7 @@
         </div>
       </div>
     </section>
+  </main>
 
     <footer>
       <div>

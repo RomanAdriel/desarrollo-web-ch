@@ -19,6 +19,7 @@ button {
             cursor: pointer;
             background-color: $global-bg-hover;
             color: $global-button-hover;
+            /*transition: all 200ms ease-out;*/
 
         }
 }
@@ -37,10 +38,12 @@ input {
 /*Estilos generales de los textos*/
 h1 {
     @include textFontSetup($global-text-font-family, $global-text-weight);
-    color: rgb(0, 153, 255);
+    color: rgb(14, 16, 17);
     text-align: center;
+    background-color: hsla(120, 13%, 91%, 0.37);
+    margin-top: 20%;
     font-size: 2rem;
-    text-transform: uppercase;
+    /*text-transform: uppercase; */
     padding: $global-padding;
 
   
