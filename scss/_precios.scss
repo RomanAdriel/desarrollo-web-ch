@@ -29,11 +29,16 @@
 
   .prices__buttons {
     font-weight: 500;
-    background: $global-button-hover;
     border: 1px solid #91C9FF;
     outline: none;
     margin-bottom: 15px;
-    transition: 1s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $global-bg-hover;
+        color: $global-button-hover;
+    }
+    
   }
   
   .prices__priceList {

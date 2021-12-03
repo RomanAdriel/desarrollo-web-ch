@@ -16,7 +16,7 @@ $section-position: 0 100%;
 
 /* General */
 $global-nav-hover: rgb(0, 153, 255);
-$global-button-hover: rgb(136, 144, 150);
+$global-button-hover: rgb(83, 88, 92);
 $global-bg-hover: rgb(144, 214, 162);
 
 * {
@@ -87,8 +87,8 @@ $global-bg-hover: rgb(144, 214, 162);
       "carrito-pro" 
       "plan-premium"
       "carrito-premium";
-      grid-template-rows: repeat(6, 1fr);
-      grid-gap: 10px;
+      grid-template-rows: repeat(6, 0.3fr);
+      grid-gap: 1px;
   }
 
   .services__images {
@@ -125,7 +125,7 @@ $global-bg-hover: rgb(144, 214, 162);
     "plan-basico plan-pro plan-premium"
     "carrito-basico carrito-pro carrito-premium";
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 1px;
   }
 
   .services__images {
