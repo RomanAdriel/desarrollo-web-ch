@@ -1,7 +1,7 @@
 {
-  "name": "entregassass",
+  "name": "A QA Man",
   "version": "1.0.0",
-  "description": "Entrega SASS",
+  "description": "Proyecto Final - Sitio de Presentación de la Compañía con posibilidad de expansión a e-commerce",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
