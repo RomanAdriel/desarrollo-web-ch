@@ -123,7 +123,7 @@ footer {
   background-image: linear-gradient(to left, #7a7a7a, whitesmoke); }
 
 .footer__buttons {
-  margin-top: 5px; }
+  margin-top: 25px; }
 
 .footer__images {
   width: 2rem;
@@ -138,14 +138,9 @@ footer {
     padding: 5px;
     margin: 5px 5px 5px 10px; }
 
-/* ex #suscription */
 .footer__subscription {
   margin-left: 15px;
   text-align: center; }
-
-/* ex #redes */
-.footer__redes {
-  margin-left: 15px; }
 
 /* Estilos generales */
 a:visited {
@@ -156,7 +151,6 @@ button {
   font-weight: 600;
   font-family: "Poppins";
   margin: auto;
-  margin-top: 25px;
   padding: 5px;
   border-radius: 3px;
   background-color: aliceblue;
@@ -165,8 +159,7 @@ button {
   button:hover {
     cursor: pointer;
     background-color: #90d6a2;
-    color: #889096;
-    /*transition: all 200ms ease-out;*/ }
+    color: #53585c; }
 
 input {
   padding: 5px;
@@ -221,6 +214,9 @@ p, .center-p {
 section {
   padding: 25px; }
 
+.main__buttons {
+  margin-top: 25px; }
+
 .main__landingVideos {
   border-radius: 5%;
   width: 50%;
@@ -259,11 +255,13 @@ section {
 
 .prices__buttons {
   font-weight: 500;
-  background: #889096;
   border: 1px solid #91C9FF;
   outline: none;
-  margin-bottom: 15px;
-  transition: 1s ease-in-out; }
+  margin-bottom: 15px; }
+  .prices__buttons:hover {
+    cursor: pointer;
+    background-color: #90d6a2;
+    color: #53585c; }
 
 .prices__priceList {
   color: #7964b4;
@@ -346,8 +344,8 @@ textarea {
     display: none; }
   .prices {
     grid-template-areas: "plan-basico" "carrito-basico" "plan-pro" "carrito-pro"  "plan-premium" "carrito-premium";
-    grid-template-rows: repeat(6, 1fr);
-    grid-gap: 10px; }
+    grid-template-rows: repeat(6, 0.3fr);
+    grid-gap: 1px; }
   .services__images {
     width: 20rem; }
   /*Estilos del carousel*/
@@ -368,7 +366,7 @@ textarea {
   .prices {
     grid-template-areas: "plan-basico plan-pro plan-premium" "carrito-basico carrito-pro carrito-premium";
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px; }
+    grid-gap: 1px; }
   .services__images {
     width: 40rem; }
   /*Estilos del carousel*/
