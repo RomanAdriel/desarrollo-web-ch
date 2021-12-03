@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"/>
   </head>
@@ -21,13 +22,13 @@
         <img src="../media/logo.png" alt="logo" class="header__logo"/>
         </a>
       </div>
-      <nav class="header">
+      <nav>
         <ul class="nav header__menu">
           <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
           <li class="nav-item"><a  class="nav-link" href="servicios.html">Servicios</a></li>
           <li class="nav-item"><a  class="nav-link" href="precios.html">Precios</a></li>
           <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-          <li class="nav-item"><a class="nav-link" href="../index.html#quienes-somos">Quiénes Somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="quienes-somos.html">Quiénes Somos</a></li>
         </ul>
       </nav>
       <nav id="mobile-nav">
@@ -36,7 +37,7 @@
           <li><a href="servicios.html">Servicios</a></li>
           <li><a href="precios.html">Precios</a></li>
           <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="../index.html#quienes-somos">Quiénes Somos</a></li>
+          <li><a href="quienes-somos.html">Quiénes Somos</a></li>
           <a class="close" href="#">
           <span class="material-icons">
             close
@@ -49,51 +50,46 @@
           </span>
         </a>
       </nav>
+      <div class="container">
+        <h1 class="header__headerAnimation">Dudas? Sugerencias? Por favor, escribinos!</h1>
+        <p class="center-p">
+          Completá el siguiente formulario y nos pondremos en contacto contigo a
+          la brevedad
+        </p>
+      </div>
     </header>
 
 
     <!--Contiene el formulario de contacto sólo con box modeling-->
-    <main>
-      <h1>Dudas? Sugerencias? Por favor, escribinos!</h1>
-      <p>
-        Completá el siguiente formulario y nos pondremos en contacto contigo a
-        la brevedad
-      </p>
-    
-      <form action="" id="form-contacto">
-        <fieldset>
+    <main class="main__sectionBackground">
+      <form action="" id="form-contacto" class="container">
+        <fieldset class="form-group">
           <legend>Datos Personales</legend>
-            <div class="contacto__blocks">
-              <label for="nombre">Nombre</label>
-              <input type="text" placeholder="Ingresá tu nombre" name="nombre"/>
-              <label for="apellido">Apellido</label>
-              <input type="text" placeholder="Ingresá tu apellido" name="apellido"/>
-            </div>
-            <div class="contacto__blocks">
-              <label for="email">Email</label>
-              <input type="text" placeholder="Ingresá tu email" name="email" />
-              <label for="telefono">Teléfono</label>
-              <input type="text" placeholder="Ingresá tu teléfono" name="telefono"/>
-            </div>
-            <div>
-              <label for="genero">Género</label>
-              <select name="genero" id="genero">
-                <option value="H">Hombre</option>
-                <option value="M">Mujer</option>
-                <option value="NB">No binario</option>
-                <option value="NSNC">Prefiero no decirlo</option>
-              </select>
-            </div>
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" placeholder="Ingresá tu nombre" name="nombre"/>
+            <label for="apellido">Apellido</label>
+            <input type="text" class="form-control" placeholder="Ingresá tu apellido" name="apellido"/>
+            <label for="email">Email</label>
+            <input type="text" class="form-control" placeholder="Ingresá tu email" name="email" />
+            <label for="telefono">Teléfono</label>
+            <input type="text" class="form-control" placeholder="Ingresá tu teléfono" name="telefono"/>
+            <label for="genero">Género</label>
+            <select name="genero" id="genero" class="form-control">
+              <option value="H">Hombre</option>
+              <option value="M">Mujer</option>
+              <option value="NB">No binario</option>
+              <option value="NSNC">Prefiero no decirlo</option>
+            </select>
         </fieldset>
-        <fieldset>
+        <fieldset class="form-group">
           <legend>Newsletter</legend>
-            <label for="newsletter">Acepto recibir novedades de A QA Man por correo</label>
-            <input type="checkbox" value="1" id="newsletter">
+            <input class="form-check-input" type="checkbox" value="" id="newsletter"  >
+            <label for="newsletter" class="form-check-label">Acepto recibir novedades de A QA Man por correo</label>
         </fieldset>
-        <textarea form="form-contacto" placeholder="Escribe aquí tu consulta..."></textarea>
+        <textarea form="form-contacto" class="container form-control" placeholder="Escribe aquí tu consulta..."></textarea>
         <div>
-          <input type="submit" value="Enviar formulario" />
-          <input type="reset" value="Limpiar formulario" />
+          <input type="submit" class="btn btn-dark contacto_buttons" value="Enviar formulario" />
+          <input type="reset" class="btn btn-dark contacto_buttons" value="Limpiar formulario" />
         </div>
       </form>
     </main>

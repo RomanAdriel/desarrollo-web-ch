@@ -75,18 +75,6 @@ $global-bg-hover: rgb(144, 214, 162);
     height: auto;
   }
 
-  /*.header__menu {
-      display: inline-grid;
-      li {
-        padding-right: 1px;
-        margin-left: 1rem;
-        margin-top: 0.5rem;
-        margin-right: 4rem;
-        padding-right: 3px;
-        padding-bottom: 1px;
-    }
-  }*/
-
   .header__menu {
     display: none;
   }
@@ -128,15 +116,7 @@ $global-bg-hover: rgb(144, 214, 162);
     width: 50em;
   }
 
-  /*.header__menu {
-    display: inline-grid;
-      li {
-        padding-right: 25px;
-        margin-left: 2rem;
-      }
-   }*/
-
-   .header__menu {
+  .header__menu {
      display: none;
    }
 
@@ -149,7 +129,7 @@ $global-bg-hover: rgb(144, 214, 162);
   }
 
   .services__images {
-    width: 48rem;
+    width: 40rem;
   }
 
   /*Estilos del carousel*/
@@ -194,7 +174,7 @@ $global-bg-hover: rgb(144, 214, 162);
   }
 
   .services__images {
-    width: 48rem;
+    width: 58rem;
   }
 
   #mobile-nav {
