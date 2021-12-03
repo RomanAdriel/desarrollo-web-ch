@@ -1,7 +1,6 @@
 .prices {
     display: grid;
     padding: $global-padding;
-    margin: 1rem;
   }
   
   #plan-basico {
@@ -33,6 +32,7 @@
     background: $global-button-hover;
     border: 1px solid #91C9FF;
     outline: none;
+    margin-bottom: 15px;
     transition: 1s ease-in-out;
   }
   

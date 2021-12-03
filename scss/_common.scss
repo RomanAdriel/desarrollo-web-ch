@@ -27,7 +27,7 @@ button {
 input {
     padding: $global-padding;
     margin-right: 10px;
-    border-radius: 3px;
+    border-radius: 0.5rem;
 
     :focus::placeholder {
         color: transparent;
