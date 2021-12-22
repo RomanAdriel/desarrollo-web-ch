@@ -63,20 +63,21 @@
 
 
     <!--Formulario de contacto-->
-    <main class="main__sectionBackground">
+    <main class="main__sectionBackground" class="container">
+      <div class="container">
       <form action="" id="form-contacto" class="container">
         <fieldset class="form-group">
           <legend>Datos Personales</legend>
             <label for="nombre">Nombre</label>
-            <input type="text" class="form-control" placeholder="Ingresá tu nombre" name="nombre"/>
+            <input type="text" class="form-control contacto__labels" placeholder="Ingresá tu nombre" name="nombre"/>
             <label for="apellido">Apellido</label>
-            <input type="text" class="form-control" placeholder="Ingresá tu apellido" name="apellido"/>
+            <input type="text" class="form-control contacto__labels" placeholder="Ingresá tu apellido" name="apellido"/>
             <label for="email">Email</label>
-            <input type="text" class="form-control" placeholder="Ingresá tu email" name="email" />
+            <input type="text" class="form-control contacto__labels" placeholder="Ingresá tu email" name="email" />
             <label for="telefono">Teléfono</label>
-            <input type="text" class="form-control" placeholder="Ingresá tu teléfono" name="telefono"/>
+            <input type="text" class="form-control contacto__labels" placeholder="Ingresá tu teléfono" name="telefono"/>
             <label for="genero">Género</label>
-            <select name="genero" id="genero" class="form-control">
+            <select name="genero" id="genero" class="form-control contacto__labels">
               <option value="H">Hombre</option>
               <option value="M">Mujer</option>
               <option value="NB">No binario</option>
@@ -86,14 +87,17 @@
         <fieldset class="form-group">
           <legend>Newsletter</legend>
             <input class="form-check-input" type="checkbox" value="" id="newsletter"  >
-            <label for="newsletter" class="form-check-label">Acepto recibir novedades de A QA Man por correo</label>
+            <label for="newsletter" class="form-check-label  contacto__labels">Acepto recibir novedades de A QA Man por correo</label>
         </fieldset>
-        <textarea form="form-contacto" class="container form-control" placeholder="Escribe aquí tu consulta..."></textarea>
+        <div class="col-10">
+          <textarea form="form-contacto" class="container form-control" rows="5" placeholder="Escribe aquí tu consulta..."></textarea>
+        </div>
         <div>
           <input type="submit" class="btn btn-dark contacto_buttons" value="Enviar formulario" />
           <input type="reset" class="btn btn-dark contacto_buttons" value="Limpiar formulario" />
         </div>
       </form>
+    </div>
     </main>
 
     <footer>
@@ -132,5 +136,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="../js/mobileNavbar.js"></script>
   </body>
 </html>

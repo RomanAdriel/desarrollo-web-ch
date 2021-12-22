@@ -9,7 +9,9 @@
   }
 
   .header__logo {
-    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .header__navbar {
