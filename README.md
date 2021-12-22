@@ -25,3 +25,4 @@ Se utilizaron las siguientes tecnologías o frameworks:
 
 1 - SCSS como preprocesador de estilos\
 2 - Bootstrap como complemento para algunos estilos
+3 - Javascript personalizado para el manejo de tooltips y algunos estilos de la navbar mobile
